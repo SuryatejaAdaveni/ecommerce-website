@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="ecom1.css">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/20c5629a29.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+        
+          <a class="navbar-brand" href="">
+            <img
+              src="https://pngimg.com/uploads/amazon/amazon_PNG5.png"
+              class="amazon-logo"
+            />
+          </a>
+          <div class="search_bar">
+            <input class="search_input" placeholder="Search for products">
+            <span class="material-symbols-outlined search_icon"><i class="bi bi-search"></i></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+
+        </div>
+                    <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" id=" navbar-text1" href="">
+                Home
+                <span class="sr-only">(current)</span>
+                <a class="nav-link" id="navbar-text2" href="">Shop</a>
+
+              <a class="nav-link" id="navbar-text2" href="">Contact</a>
+              <a class="nav-link" id="navbar-text2" href="">
+                Cart<i class="bi bi-cart3"></i>
+              </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="34"  fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="container">
+          <div class="row">
+    
+            <div class="explore-section pt-5 pb-5">
+              <div class="container">
+                <div class="row">
+        
+                  <div class="col-12">
+                    <h1 class="section-heading">Explore Products</h1>
+                  </div>
+                  
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow item-card p-3 mb-3">
+                      <img
+                        src="https://i.ibb.co/B4F1Kmt/jeans-wasing-denim-jean.jpg" alt="jeans-wasing-denim-jean"
+                        class="image w-100"
+                      />
+                      <h1>Denim Jeans</h1>
+                      <div class = "span-elements">
+                      <h6>₹499 </h6> 
+                      <span class = "span-el">₹1299</span>
+                    </div>
+                      <a href="" class="item-link">
+                       <div class = "buttons">
+                        <button class = "add-to-cart-button button">Add to Cart</button>
+                        <button class = "add-to-cart-button button">Buy Now</button>  
+                       </div>
+                      </a>
+                    </div>
+                  </div>
+    
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow item-card p-3 mb-3">
+                      <img
+                        src="https://i.ibb.co/C7nCQ5Y/OIP.jpg" alt="OIP"  alt="jeans-wasing-denim-jean"
+                        class="image w-100"
+                      />
+                      <h1> Men's Hoodie</h1>
+                      <div class = "span-elements">
+                        <h6>₹469 </h6> 
+                        <span class = "span-el">₹999</span>
+                      </div>                  <a href="" class="item-link">
+                        <div class = "buttons">
+                          <button class = "add-to-cart-button button">Add to Cart</button>
+                          <button class = "add-to-cart-button button">Buy Now</button>  
+                         </div>       
+                      </a>
+                    </div>
+                  </div>
+    
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow item-card p-3 mb-3">
+                      <img
+                        src="https://i.ibb.co/Khn3y8B/shoe.jpg" alt="shoe" alt="OIP"  alt="jeans-wasing-denim-jean"
+                        class="image w-100"
+                      />
+                      <h1>Sneakers</h1>
+                      <div class = "span-elements">
+                        <h6>₹754 </h6> 
+                        <span class = "span-el">₹1499</span>
+                      </div>                  <a href="" class="item-link">
+                        <div class = "buttons">
+                          <button class = "add-to-cart-button button">Add to Cart</button>
+                          <button class = "add-to-cart-button button">Buy Now</button>  
+                         </div>      
+                      </a>
+                    </div>
+                  </div>
+    
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow item-card p-3 mb-3">
+                      <img
+                        src="https://i.ibb.co/jrqbNKc/realme.jpg" alt="realme"
+                        class="image w-100"
+                      />
+                      <h1>Realme P1 5G</h1>
+                      <div class = "span-elements">
+                        <h6>₹15,999 </h6> 
+                        <span class = "span-el">₹17,150</span>
+                      </div>                  <a href="" class="item-link">
+                        <div class = "buttons">
+                          <button class = "add-to-cart-button button">Add to Cart</button>
+                          <button class = "add-to-cart-button button">Buy Now</button>  
+                         </div>      
+                      </a>
+                    </div>
+                  </div>
+    
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow item-card p-3 mb-3">
+                      <img
+                        src="https://i.ibb.co/H4jTLS3/boxer.jpg" alt="boxer" 
+                        class="image w-100"
+                      />
+                      <h1>Brand Cargo Short</h1>
+                      <div class = "span-elements">
+                        <h6>₹349 </h6> 
+                        <span class = "span-el">₹799</span>
+                      </div>                  <a href="" class="item-link">
+                        <div class = "buttons">
+                          <button class = "add-to-cart-button button">Add to Cart</button>
+                          <button class = "add-to-cart-button button">Buy Now</button>  
+                         </div>      
+                      </a>
+                    </div>
+                  </div>
+    
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow item-card p-3 mb-3">
+                      <img
+                        src="https://i.ibb.co/ygTFrrr/laptop.jpg" alt="laptop" alt="OIP"  alt="jeans-wasing-denim-jean"
+                        class="image w-100"
+                      />
+                      <h1>MacBook Air M1</h1>
+                      <div class = "span-elements">
+                        <h6>₹69,400</h6> 
+                        <span class = "span-el">₹89,500</span>
+                      </div>                  <a href="" class="item-link">
+                        <div class = "buttons">
+                          <button class = "add-to-cart-button button">Add to Cart</button>
+                          <button class = "add-to-cart-button button">Buy Now</button>  
+                         </div>         
+                      </a>
+                    </div>
+                  </div>
+    
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow item-card p-3 mb-3">
+                      <img
+                        src="https://i.ibb.co/hX1M0hh/formal.jpg" alt="formal" " alt="OIP"  alt="jeans-wasing-denim-jean"
+                        class="image w-100"
+                      />
+                      <h1>Formal Shirt</h1>
+                      <div class = "span-elements">
+                        <h6>₹600 </h6> 
+                        <span class = "span-el">₹999</span>
+                      </div>                  <a href="" class="item-link">
+                        <div class = "buttons">
+                          <button class = "add-to-cart-button button">Add to Cart</button>
+                          <button class = "add-to-cart-button button">Buy Now</button>  
+                         </div>         
+                      </a>
+                    </div>
+                  </div>
+    
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow item-card p-3 mb-3">
+                      <img
+                        src="https://i.ibb.co/yQNYpXV/cargo.jpg" alt="cargo" 
+                        class="image w-100"
+                      />
+                      <h1>Cargos</h1>
+                      <div class = "span-elements">
+                        <h6>₹692 </h6> 
+                        <span class = "span-el">₹1700</span>
+                      </div>                 
+                       <a href="" class="item-link">
+                        <div class = "buttons">
+                          <button class = "add-to-cart-button button">Add to Cart</button>
+                          <button class = "add-to-cart-button button">Buy Now</button>  
+                         </div>        
+                      </a>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    
+    </main>
+    <!-- Product Section -->
+     <h1>shoe products</h1>
+<section class="product">
+    <div class="product-image">
+        <img src="https://media.gettyimages.com/id/185011763/photo/shoes.jpg?s=612x612&w=0&k=20&c=iyRgidzx3zqcF_XSS9kcrKam1iy0UX9lMFMIBKw7X2Y=" alt="Product Image">
+    </div>
+    <div class="product-details">
+        <h1>Formal Shoes</h1>
+        <p class="price">$99.99</p>
+        <p class="description">This shoes are made from pure letherand very comfy to use.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</section>
+ <!-- Optional Sections -->
+        <section class="reviews">
+             <h2>Customer Reviews</h2>
+             <h3>Name:singh</h3>
+                :: This product is good according to its price.
+            <h3>Name:sridhar</h3>
+                :: Recived good product and its comfy for regular use .
+            <h3>Name:patel</h3>
+                :: Good product,better to go for buying this if you are lokking for any formal shoes.
+                               
+        </section>
+
+<!-- Related Products Section -->
+<section class="related-products">
+    <h2>Related Products    </h2>
+    <div class="product">
+        <div class="product-image">
+            <img src="https://media.istockphoto.com/id/187310279/photo/brown-leather-shoe.jpg?s=612x612&w=0&k=20&c=N-G1SP8dDojp3M_ykS7tQuYI8OVPWM0XA8_knBiWRtY=" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1>Formal shoes</h1>
+            <p class="price">$95.99</p>
+            <p class="description">same as above seen product.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    
+        <div class="product">
+            <div class="product-image">
+                <img src="https://media.gettyimages.com/id/171253262/photo/brown-leather-shoes.jpg?s=612x612&w=0&k=20&c=2S3BNKNauS1UfvXiZnx0_sIuu867abcnN27B193_1Xw=" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>Formal shoes</h1>
+                <p class="price">$90.99</p>
+                <p class="description">Same as above Product.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+ <section>       
+    <!-- Repeat for other related products -->
+    <h1>watch products</h1>
+
+    <section class="product">
+        <div class="product-image">
+            <img src="https://media.gettyimages.com/id/458708037/photo/luxury-rolex-wristwatch-with-diamonds.jpg?s=612x612&w=0&k=20&c=fAbgfRzQoLYZsoUYrTDUZtISqI3lAaGpH1K4BeAEaSU=" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1>Rolex watch</h1>
+            <p class="price">$214,123.99</p>
+            <p class="description">Elegant and timeless, this Rolex watch combines precision craftsmanship with luxury design, making it a symbol of status and sophistication..</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+     <!-- Optional Sections -->
+            <section class="reviews">
+                 <h2>Customer Reviews</h2>
+                 <h3>Name:Rajesh</h3>
+                    :: This product is the best i have ever received.
+                <h3>Name:sandhya</h3>
+                    :: Recived good product and its very luxury.
+                <h3>Name:parthiv</h3>
+                    :: Same as other watches,looks wise very nice.
+                                   
+            </section>
+    
+    <!-- Related Products Section -->
+    <section class="related-products">
+        <h2>Related Products    </h2>
+        <div class="product">
+            <div class="product-image">
+                <img src="https://media.gettyimages.com/id/522694154/photo/diamond-encrusted-rolex-watch-mall-of-america-minnesota.jpg?s=612x612&w=0&k=20&c=V-aQwINZ0O0Gq5pA6Z1EF5dNjTAm19SShcMr5nJp2Fg=" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>Gold encrusted rolex watch</h1>
+                <p class="price">$359,999.99</p>
+                <p class="description">same as above seen product but in addition with gold .</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+            <div class="product">
+                <div class="product-image">
+                    <img src="https://cdn.itshot.com/product/450x/17f82f742ffe127f42dca9de82fb58b1/i/c/iced-out-diamond-rolex-watch-for-men-datejust-with-diamond-bezel-face-20c_main.jpg?w=1" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1>diamond Rolex</h1>
+                    <p class="price">$399,999.99</p>
+                    <p class="description">Same as above seen Product but in addition with diamonds.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+    </section> 
+    
+    <!--next product-->>
+    <h1>Mobile products</h1>
+    
+    <section class="product">
+        <div class="product-image">
+            <img src="https://www.91-img.com/pictures/149017-v7-realme-10-mobile-phone-large-1.jpg?tr=q-80" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1>Realme 10 5g mobile</h1>
+            <p class="price">$249.99</p>
+            <p class="description">The Realme 10 5G offers lightning-fast connectivity and a smooth user experience, powered by a robust processor and a vibrant display. With a sleek design and long-lasting battery, it’s the perfect blend of style and performance.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+     <!-- Optional Sections -->
+            <section class="reviews">
+                 <h2>Customer Reviews</h2>
+                 <h3>Name:singh</h3>
+                    :: Great performance and battery life, sleek design with smooth 5G connectivity, but the camera could be better..
+                <h3>Name:sridhar</h3>
+                    :: Recived good pr0duct and its comfy for regular use .
+                <h3>Name:patel</h3>
+                    :: Outstanding performance and sleek design, great value for money, but the camera could be better..
+                                   
+            </section>
+    
+    <!-- Related Products Section -->
+    <section class="related-products">
+        <h2>Related Products    </h2>
+        <div class="product">
+            <div class="product-image">
+                <img src="https://cdn1.smartprix.com/rx-iADfJflhU-w420-h420/realme-10-pro.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>Realme 10 pro 5g</h1>
+                <p class="price">$299.99</p>
+                <p class="description">modified/better version of the above seen product.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+            <div class="product">
+                <div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/41wlMKjNAjL.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <h1>Realme 10 pro + 5g</h1>
+                    <p class="price">$349.99</p>
+                    <p class="description">modified/better version of the above seen product.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+    </section>        
+            
+
+</section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; SURYA PRODUCTS</p>
+        <h3>ONLINE SHOPPING</h3>
+
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Home & Living</a>
+        <a href="#">Beauty</a>
+        <a href="#">Gift Card</a>
+    </footer>
+</body>
+</html>
